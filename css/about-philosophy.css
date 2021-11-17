@@ -1,0 +1,119 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.7;
+}
+li {
+    list-style: none;
+}
+
+header {
+    position: relative;
+}
+.header {
+    position: absolute;
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 10;
+}
+.header-ttl {
+    font-size: 50px;
+    text-shadow: 3px 5px 5px #cecece;
+}
+.header-ttl a {
+    color: #7e7e7e;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+}
+.header-list-a {
+    color: #000;
+}
+.header-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+.firstview-philosophy_img {
+    width: 100%;
+    height: 500px;
+}
+.firstview-philosophy_ttl {
+    position: absolute;
+    z-index: 5;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 72px;
+    font-family: serif;
+}
+.philosophy-content {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.philosophy-content h2 {
+    font-size: 24px;
+    width: 40%;
+    text-align: center;
+}
+.philosophy-content span {
+    font-size: 48px;
+}
+.philosophy-content p {
+    width: 100%;
+    font-size: 24px;
+}
+.philosophy-content-list {
+    width: 100%;
+}
+.philosophy-content-list p {
+    line-height: 3;
+}
+
+.philosophy-origin h2 {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 48px;
+}
+.origin-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.origin-content p {
+    font-size: 72px;
+    margin: 0 20px;
+}
+.origin-content-item {
+    position: relative;
+}
+.origin-content-item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+.origin-content-item img {
+    width: 100%;
+    height: 300px;
+}
+.origin-txt {
+    margin: 20px auto;
+    width: 50%;
+    font-size: 24px;
+}

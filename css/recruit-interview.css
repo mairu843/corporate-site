@@ -1,0 +1,97 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.7;
+}
+li {
+    list-style: none;
+}
+
+header {
+    position: relative;
+}
+.header {
+    position: absolute;
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 10;
+}
+.header-ttl {
+    font-size: 50px;
+    text-shadow: 3px 5px 5px #cecece;
+}
+.header-ttl a {
+    color: #7e7e7e;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+}
+.header-list-a {
+    color: #000;
+}
+.header-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+.interview {
+    margin-top: 150px;
+}
+.interview h1 {
+    font-size: 64px;
+    text-align: center;
+}
+.interview-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 100px;
+}
+.interview-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+.interview-content a {
+    display: block;
+    width: 100%;
+    color: #000;
+    font-weight: normal;
+}
+.interview-content p:first-child {
+    padding: 30px 30px;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+.interview-content p:nth-of-type(2n) {
+    padding: 50px 30px;
+    border: 1px solid #000;
+    border-radius: 0 0 15px 15px;
+}
+/* hover-style */
+.interview-content:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 100px 0 0 0;
+    text-align: center;
+    opacity: 1;
+    background-color: #ececec;
+    border-radius: 15px;
+}
+/* hover-style */

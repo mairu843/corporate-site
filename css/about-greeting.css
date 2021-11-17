@@ -1,0 +1,74 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.7;
+}
+li {
+    list-style: none;
+}
+
+header {
+    position: relative;
+}
+.header {
+    position: absolute;
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 10;
+}
+.header-ttl {
+    font-size: 50px;
+    text-shadow: 3px 5px 5px #cecece;
+}
+.header-ttl a {
+    color: #7e7e7e;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+}
+.header-list-a {
+    color: #000;
+}
+.header-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.greeting {
+    width: 95%;
+    margin: 200px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+.greeting-img {
+    width: 40%;
+    height: 350px;
+}
+.greeting-txt {
+    width: 50%;
+}
+.greeting-txt h1 {
+    font-size: 64px;
+    text-shadow:
+    0.3px 0.3px 0,
+    0.3px -0.3px 0px,
+    -0.3px 0.3px 0,
+    -0.3px -0.3px 0px,
+    0.3px 0px 0px,
+    0px 0.3px 0px,
+    -0.3px 0px 0px,
+    0px -0.3px 0px;;
+    font-family: serif;
+}
+.greeting-txt p {
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+}

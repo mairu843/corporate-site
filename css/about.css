@@ -1,0 +1,332 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.7;
+}
+li {
+    list-style: none;
+}
+/* body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+縮小時もスタイルが崩れない */
+
+
+
+@media screen and (max-width: 768px) {
+    a {
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+    }
+    a:hover {
+        opacity: 0.7;
+    }
+    li {
+        list-style: none;
+    }
+    img {
+        width: 100%;
+    }
+
+
+
+    .header-ttl {
+        position: absolute;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        font-size: 10vw;
+        text-shadow: 3px 5px 5px #cecece;
+    }
+    .header-ttl a {
+        color: #7e7e7e;
+    }
+    .header-list {
+        position: absolute;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        background-color: #eee;
+        transition: .7s;
+        text-align: center;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    .header-list-a {
+        margin-top: 50px;
+    }
+    .header-hum-menu {
+        display: inline-block;
+        width: 36px;
+        height: 32px;
+        cursor: pointer;
+        position: relative;
+        right: 20px;
+        top: 20px;
+        position: fixed;
+        background-color: #7e7e7e;
+        padding: 10px;
+    }
+    .menu__line--top,
+    .menu__line--middle,
+    .menu__line--bottom {
+        display: inline-block;
+        width: 60%;
+        height: 4px;
+        background-color: #000;
+        position: absolute;
+        transition: 0.5s;
+    }
+    .menu__line--top {
+        top: 10px;
+    }
+    .menu__line--middle {
+        top: 23px;
+    }
+    .menu__line--bottom {
+        bottom: 10px;
+    }
+    .header-hum-menu.open span:nth-of-type(1) {
+        top: 24px;
+        transform: rotate(45deg);
+    }
+    .header-hum-menu.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .header-hum-menu.open span:nth-of-type(3) {
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+    .in {
+        transform: translateX(100%);
+    }
+
+
+
+    .about-firstview {
+        background-color: #000;
+        height: 100vh;
+        color: #fff;
+        position: relative;
+        z-index: -1;
+    }
+    .about-ttl {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10vw;
+    }
+    .firstview-txt {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+        font-family: serif;
+        line-height: 3;
+    }
+    .firstview-sub {
+        text-align: right;
+    }
+    .firstview-sub_txt {
+        display: inline-block;
+        text-align: left;
+        font-size: 3.5vw;
+        line-height: 3;
+        font-family: serif;
+    }
+
+    .contents {
+        margin: 100px auto 0;
+        width: 70%;
+    }
+    .content-ttl {
+        font-size: 4vw;
+        font-weight: normal;
+        text-align: center;
+    }
+    .content-group {
+        margin: 50px auto 0;
+    }
+    .content-item {
+        margin-top: 80px;
+    }
+    .content-item:not(:nth-of-type(2)) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content-item_txt {
+        font-size: 3vw;
+        width: 80%;
+        margin: 80px auto 0;
+    }
+    .content-item_txt p {
+        text-align: center;
+        line-height: 1.2;
+    }
+    .content-item_txt p:nth-of-type(2) {
+        margin-top: 30px;
+    }
+
+    .about-menu {
+        width: 90%;
+        margin: 100px auto 0;
+    }
+    .menu_block {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        height: 100px;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    header {
+        position: relative;
+    }
+    .header {
+        position: absolute;
+        position: fixed;
+        top: 15px;
+        left: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        z-index: 10;
+    }
+    .header-ttl {
+        font-size: 50px;
+        text-shadow: 3px 5px 5px #cecece;
+    }
+    .header-ttl a {
+        color: #7e7e7e;
+    }
+    .header-list {
+        display: flex;
+        align-items: center;
+    }
+    .header-list-a {
+        color: #fff;
+    }
+    .change-black {
+        color: #000;
+    }
+    .header-list-item:not(:last-child){
+        margin-right: 30px;
+    }
+    .header-hum-menu {
+        display: none;
+    }
+
+
+
+    .about-firstview {
+        background: #000;
+        width: 100%;
+        color: #fff;
+        height: 650px;
+        position: relative;
+    }
+    .about-ttl {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 72px;
+        font-weight: 100;
+    }
+    .firstview-txt {
+        position: absolute;
+        top: 450px;
+        left: 5%;
+        font-size: 48px;
+        font-family: serif;
+        line-height: 1.5;
+    }
+    .firstview-sub {
+        text-align: right;
+        margin-top: 50px;
+    }
+    .firstview-sub_txt {
+        display: inline-block;
+        text-align: left;
+        font-size: 36px;
+        font-family: serif;
+        line-height: 1.5;
+    }
+
+    .contents {
+        margin-top: 200px;
+    }
+    .content-ttl {
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        font-family: serif;
+    }
+    .content-item {
+        margin-top: 100px;
+        display: flex;
+        font-family: serif;
+    }
+    .content-item_txt {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-item_txt p {
+        width: 55%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .content-item_img {
+        text-align: center;
+        width: 50%;
+    }
+    .content-item_img img {
+        width: 80%;
+    }
+    .about-menu {
+        margin-top: 200px;
+        text-align: center;
+    }
+    .menu_block {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about-menu-item {
+        width: 30%;
+        padding: 70px 20px;
+        background: #000;
+        color: #fff;
+        font-size: 24px;
+        font-weight: normal;
+    }
+}
